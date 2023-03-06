@@ -361,7 +361,7 @@ class PlutoGridCupertinoScrollbarState extends State<PlutoScrollbar>
     _startFadeoutTimer();
     _thicknessAnimationController.reverse();
     _dragScrollbarAxisPosition = null;
-    final double scrollVelocity = _painter!.getTrackToScroll(trackVelocity);
+    final double scrollVelocity = 0;
     _drag?.end(DragEndDetails(
       primaryVelocity: -scrollVelocity,
       velocity: Velocity(
@@ -1381,7 +1381,7 @@ class _ThumbPressGestureRecognizer extends LongPressGestureRecognizer {
           postAcceptSlopTolerance: postAcceptSlopTolerance,
           supportedDevices: supportedDevices,
           debugOwner: debugOwner,
-          duration: const Duration(milliseconds: 100),
+          duration: const Duration(milliseconds: 1),
         );
 
   final GlobalKey _customPaintKey;
